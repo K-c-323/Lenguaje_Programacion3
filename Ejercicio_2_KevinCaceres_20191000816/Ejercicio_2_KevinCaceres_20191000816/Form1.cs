@@ -31,8 +31,8 @@ namespace Ejercicio_2_KevinCaceres_20191000816
         private void AgregarButton_Click(object sender, EventArgs e)
         {
             
-            string[] nombres = new string[10];
-            int[] edad = new int[10];
+            string[] nombres = new string[20];
+            int[] edad = new int[20];
             int maximo = edad.Length;
             if (contador < maximo)
             {
@@ -43,15 +43,22 @@ namespace Ejercicio_2_KevinCaceres_20191000816
             }
             else
             {
-                MessageBox.Show("Lo sentimos haz Agregado el numero maximo de nombres","Save error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Lo sentimos haz Agregado el numero maximo de nombres \nPor favor seleccione el bonton **limpiar** para agregar mas nombres", "Save error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
         }
 
         private void Limpiarbutton_Click(object sender, EventArgs e)
         {
+           
             contador = 0;
             ListadoComboBox.Items.Clear();
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            ListadoComboBox.ContextMenu.GetMainMenu();
 
         }
     }

@@ -95,7 +95,7 @@
             // 
             // Limpiarbutton
             // 
-            this.Limpiarbutton.Location = new System.Drawing.Point(669, 210);
+            this.Limpiarbutton.Location = new System.Drawing.Point(646, 196);
             this.Limpiarbutton.Name = "Limpiarbutton";
             this.Limpiarbutton.Size = new System.Drawing.Size(119, 51);
             this.Limpiarbutton.TabIndex = 6;
@@ -107,6 +107,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.Limpiarbutton);
             this.Controls.Add(this.AgregarButton);
